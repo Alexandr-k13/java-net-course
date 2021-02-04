@@ -2,6 +2,10 @@
 
 Сервеh принимающий файл:
 
+import java.io.IOException;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+
 public class NioServer {
     private static final int PORT = 1234;
     private static final String FILE_NAME = "image.jpg";
