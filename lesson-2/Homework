@@ -1,14 +1,18 @@
-package ru.gb.chat.server.gui;
-
-import ru.gb.chat.server.core.ChatServer;
-import ru.gb.chat.server.core.ChatServerListener;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.util.Iterator;
 
-public class ServerGUI extends JFrame implements ActionListener, Thread.UncaughtExceptionHandler, ChatServerListener {
+public class Server extends JFrame implements ActionListener, Thread.UncaughtExceptionHandler, ChatServerListener {
 
     private static final int POS_X = 800;
     private static final int POS_Y = 200;
