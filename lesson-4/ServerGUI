@@ -1,0 +1,27 @@
+ServerGUI
+import javax.swing*
+public class ServerGUI extends JFrame{
+public static void main (String[]args){
+SwingUtilities.invok@later(new Runneble()){
+@Owerride
+public void run(new serverGUI);
+
+private Server GUI{
+
+setdefaultCloseoperation (WindowsConstant, Exit_on close)
+set Bound (POS X, POS Y, WIDTH, HEIGHT);
+setResizable(false);
+setTitle("CloudStorage");
+setAlwaysOnTop(true);
+SetLayout(new GridLayout(1,2));
+btnStart.addActionListener
+add (btn Start);
+add(btn Stop);
+setVisible(true);
+@override
+public void actionPerfomed(Action Event e){
+Object src = e. getSource();
+if (scr == btnStop)
+CloudStorage.stop();
+else if (src == btnStart)
+CloudStorage.start(7532);
