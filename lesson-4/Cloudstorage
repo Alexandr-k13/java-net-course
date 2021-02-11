@@ -1,0 +1,8 @@
+CloudStorage
+public class CloudStorage{
+public void start (int port){
+System.out.println ("Server started at port": +port);
+}
+public void stop(){
+system.out.println("Server stopped")
+}
